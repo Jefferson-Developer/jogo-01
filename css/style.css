@@ -1,0 +1,98 @@
+.center{text-align: center; color: white;}
+.area{
+	height: 72vh;
+}
+.bar{
+	background-color: #ddd;
+	border-radius: 25vh;
+	height: 5vh;	
+}
+.progresso{
+	border-radius: 30vh;
+	background-color: #4CAF50;
+	margin-left:-15px;
+	width: 1%;
+	height: 5vh;
+	position: absolute;
+}
+.ponto{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	background-image:url(meteor.png);
+	background-size: cover;
+
+
+	font-family: 'Nunito', sans-serif;
+	
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	position: absolute;  
+
+	color: white;
+	-webkit-text-stroke: 1px #00FFB3;
+	text-shadow: 0 0 5px #CCFFF7, 0 0 200px #00FFDB;
+	-webkit-background-clip: none;
+
+
+	fill: rgba(255,255,255,0.1);
+	stroke: rgba(255,255,255,0.1);
+	filter: blur(0) drop-shadow(-5px 5px 5px orange);	
+	/* transition: 1s linear; */
+}
+h1 span{
+	float:right;
+	color:white;
+	font-size: 20px;
+	padding: 8px;
+}
+#pontos{
+	display: none;
+}
+
+body{
+	background-image:url(cometa.png);
+	background-size: cover;
+}
+.topo{
+	background-color: red;
+}
+#top{
+	float:right;
+	margin-right: 10px;
+}
+div:hover{
+    text-shadow:
+        0px 0px 10px blue,
+        0px 0px 10px blue,
+        0px 0px 10px blue,
+        0px 0px 10px blue;
+
+        cursor:default;
+        color: black;
+        font-size:18px;         
+        list-style-type:none;    
+}
+.area_neon h1.neon{
+	font-size: 2.5em;
+	filter: blur(0);
+	-webkit-text-stroke: 1px rgba(255,255,255,0.1);
+	color: rgba(255,255,255,0.1);/
+  	-webkit-background-clip: text;	
+  	transition: all ease 1s;
+}
+.area_neon svg.neon_img{
+
+}
+/**SVG com o neon Ligado**/
+.area_neon svg.neon_img.on{
+	/**
+	Aqui aplicamos a mesma lógica usada
+	no texto, porém adaptada para o tipo de objeto.
+	**/
+	fill: white;
+	stroke: #F0FF00;
+	filter: blur(1px) drop-shadow(0 0 10px #F0FF00)  drop-shadow(0 0 200px #F0FF00) ;
+}
